@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSetting"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefebe7" >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/mode_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relative"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:orientation="horizontal" >
+  
+       <TextView
+        android:id="@+id/textViewMode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/modebutton1"
+        android:layout_alignBottom="@+id/modebutton1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:text="@string/title_setting_mode"
+        android:textColor="@color/black" />
+            
+        <Button
+            android:id="@+id/modebutton1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="29dp"
+            android:layout_toLeftOf="@+id/textViewMode"
+            android:text=" &lt; " />
+
+        <TextView
+            android:id="@+id/textViewMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/modebutton1"
+            android:layout_alignBottom="@+id/modebutton1"
+            android:layout_centerHorizontal="true"
+            android:text="mode"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/modebutton2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textViewMode"
+            android:layout_marginTop="29dp"
+            android:layout_marginLeft="20dp"
+            android:text=" > " />
+
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top_relative"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:scaleType="matrix" />
+    
+<RelativeLayout
+    android:id="@+id/EQ_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:layout_below="@+id/mode_panel"
+    android:layout_marginTop="30dp"
+    >
+
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/title_setting_EQ"
+            android:textColor="@color/black" />
+    
+            <ImageButton
+            android:id="@+id/vbImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:src="@drawable/vboff"/>
+            
+        <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/vbImageButton"
+         />
+
+        
+        
+    </RelativeLayout>
+
+    
+
+
+
+    <RelativeLayout
+        android:id="@+id/play_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vol_panel"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/pauseButton"
+            android:src="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/playButton"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pause" />
+
+        <ImageButton
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="46dp"
+            android:layout_toRightOf="@+id/pauseButton"
+            android:src="@drawable/stop" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vol_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/EQ_panel"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seekBar1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/title_setting_vol"
+            android:textColor="@color/black" />
+
+            <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView2"
+            android:src="@drawable/normal" />
+                
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageButton3"
+            android:max="32" />
+        
+    </RelativeLayout>
+
+     <Button
+        android:id="@+id/settle_accounts"
+        style="\@style/common_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/refbutton1"
+        android:gravity="center"
+        android:text="@string/main_player" 
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bluebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@+id/refbutton1"
+        android:text="@string/main_bluetooth" 
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/refbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="刷新" 
+        android:visibility="gone" />
+
+    
+    
+</RelativeLayout>

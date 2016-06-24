@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPlayer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefebe7" >
+
+    
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_relative"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+
+<RelativeLayout android:id="@+id/control_panel"
+        android:orientation="horizontal" 
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+    <TextView
+        android:id="@+id/textViewPath"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:hint="folder path"
+        android:text="/"
+        android:textColor="@color/black" />
+
+    <Button android:id="@+id/play_pause_btn"
+    android:layout_width="100px"
+    android:layout_height="wrap_content" 
+    android:layout_alignParentLeft="true"
+    android:visibility="invisible"
+    android:text="@string/player_playpause"/>    
+      
+	<Button android:id="@+id/stop_btn"
+    android:layout_width="100px"
+    android:layout_height="wrap_content" 
+    android:layout_alignParentRight="true"
+    android:visibility="invisible"
+    android:text="@string/player_stop"/>            
+</RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/clearButton"
+        android:layout_below="@id/control_panel"
+        android:layout_centerHorizontal="true"
+        android:cacheColorHint="@color/white" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/refreshbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="刷新" 
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="41dp"
+        android:layout_toRightOf="@+id/refreshbutton1"
+        android:text="@string/main_bluetooth" 
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/backbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="41dp"
+        android:layout_toLeftOf="@+id/refreshbutton1"
+        android:text="@string/main_setting" 
+        android:visibility="gone" />
+
+</RelativeLayout>

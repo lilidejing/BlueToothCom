@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MVboxCon</string>
+    <string name="ActivityMainTitle">MVbox</string>
+    <string name="main_home">首页</string>
+    <string name="main_bluetooth">蓝牙</string>
+    <string name="main_setting">设置</string>
+    <string name="main_player">浏览器</string>
+    <string name="main_exit">退出</string>
+    <string name="app_close_msg">关闭应用程序</string>
+    <string name="btn_cancel">取 消</string>
+    <string name="btn_ok">确 定</string>
+    <string name="app_about">关于本程序</string>
+    <string name="app_about_msg"> by fooree v1.0</string>
+    <string name="copyright">CopyRight: author@abc.com \r\nAll right reserved. 2013</string>
+    <string name="bluetoothStatus">蓝牙开关</string>
+    <string name="bluetoothConn">蓝牙通讯未连接</string>
+    <string name="company_name">上海 山景</string>
+    <string name="connButton">连接设备</string>
+    <string name="sendButton">Send</string>
+    <string name="sendArea">发送区</string>
+    <string name="discover">查找更多设备</string>
+    <string name="paired">已配对设备</string>
+    <string name="subBlueHint">请选择设备开始连接</string>
+    <string name="not_connected">蓝牙设备未连接</string>
+    <string name="title_not_connected">蓝牙设备未连接</string>
+    <string name="title_connecting">蓝牙设备连接中...</string>
+    <string name="title_connected_to">蓝牙设备已连接到</string>
+    <string name="disconnectButton">断开连接</string>
+    <string name="recTxtTitle">接收区</string>
+    <string name="modeswitch">模式切换</string>
+    <string name="title_setting_mode">模式</string>
+    <string name="title_setting_vol">音量</string>
+    <string name="title_setting_batt">电池电量</string>
+    <string name="title_setting_EQ">音效</string>
+    <string name="str_ok">确定</string>
+    <string name="str_no">取消</string>
+    <string name="app_close">退出</string>
+    <string name="player_playpause">播放</string>
+    <string name="player_stop">停止</string>
+
+</resources>
